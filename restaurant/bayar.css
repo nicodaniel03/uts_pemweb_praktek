@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    gap: 20px;
+}
+
+.payment-option {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.payment-option:hover {
+    transform: translateY(-5px);
+}
+
+.payment-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.bank-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0a/Logo_Bank_Mandiri.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dana-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e4/Logo_DANA_Indonesia_2020.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.qr-icon {
+    background-image: url('https://via.placeholder.com/80');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pay-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.pay-button:hover {
+    background-color: #0056b3;
+}
+
+.bank-btn {
+    background-color: #007bff;
+}
+
+.bank-btn:hover {
+    background-color: #0056b3;
+}
+
+.wallet-btn {
+    background-color: #1f8cfd;
+}
+
+.wallet-btn:hover {
+    background-color: #0f6bb8;
+}
+
+.qr-btn {
+    background-color: #007bff;
+}
+
+.qr-btn:hover {
+    background-color: #0f6bb8;
+}
+
+.bank-options, .wallet-options {
+    margin-top: 20px;
+    display: none;
+}
+
+select {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.qr-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-qr-image {
+    max-width: 80%;
+    max-height: 80%;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}

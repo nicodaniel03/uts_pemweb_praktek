@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    background-color: rgb(45, 226, 226);
+    color: #333;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #3d3b3b;
+    color: white;
+}
+
+.site-title {
+    flex: 1;
+    font-size: 1.5em;
+    color: white;
+    text-align: left;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: right;
+    flex-grow: 1;
+}
+
+#search-input {
+    padding: 8px 15px;
+    font-size: 1em;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px;
+}
+
+.pencarian {
+    background: none;
+    border-radius: 4px;
+    width: 25px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    color: rgba(189, 184, 184, 0.925);
+    margin-left: -30px; 
+    display: flex;
+    align-items: center;
+}
+
+.pencarian i {
+    width: 20px;
+    height: 20px;
+}
+
+
+.pencarian:hover i {
+    color: #4CAF50;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #666;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+
+.logout {
+    color: red;
+    font-weight: bold;
+}
+
+
+.social-icons .icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 10px; 
+}
+
+.wa {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    filter: brightness(1);
+}
+
+.description {
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    font-size: 16px;
+    color: #555;
+}
+
+.order-table {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    padding: 10px;
+    width: 90%;
+}
+
+.order-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.order-item:hover {
+    transform: translateY(-5px);
+}
+
+.food-image {
+    width: 220px;
+    height: 155px;
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin: 5px 0 6px;
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+    color: #777;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    margin-top: 10px;
+}
+
+.order-table.searching {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+.order-item.search-result {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn.minus {
+    background-color: #dc3545;
+}
+
+.btn:hover {
+    background-color: #155724;
+}
+
+.btn.minus:hover {
+    background-color: #c82333;
+}
+
+.count {
+    font-size: 18px;
+    width: 30px;
+    text-align: center;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #333;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.order-button:hover {
+    background-color: #0056b3;
+}

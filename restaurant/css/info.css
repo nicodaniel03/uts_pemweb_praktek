@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(224, 224, 224);
+    color: #333;
+    padding: 20px;
+}
+
+.notice{
+    width: 91.5%;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    z-index: 100;
+    background-color: whitesmoke;
+}
+
+.notice-2{
+    font-size: 18px;
+}
+
+.catat{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 19.5px;
+}
+
+.cancel {
+    font-size: 16px;
+    background-color: #007bff;
+    width: 10%;
+    padding: 10px 0 10px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.cancel:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #007bff;
+    transition: background-color 0.5s;
+}
+
+.pesanan {
+    margin-top: 10%;
+}
+
+.container {
+    width: 101%;
+    height: 100vh;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: black;
+}
+
+table {
+    margin: auto;
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabel-2 {
+    width: 70%;
+}
+
+thead {
+    background-color: gray;
+    color: #fff;
+}
+
+th {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #d6d2d2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+tbody tr:hover {
+    background-color: #d3f9d8;
+}
+
+.lanjut {
+    position: fixed;
+    width: 97.9%;
+    bottom: 5px;
+    left: 50.5%; 
+    transform: translateX(-50%); 
+    background-color: grey; 
+    color: white; 
+    padding: 26px 15px; 
+    font-size: 16px;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100; 
+}
+
+.next {
+    width: 20%;
+    margin: auto;
+    padding: 15px ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #007bff;
+}
+
+.next:hover{
+    cursor: pointer;
+    color: rgb(226, 223, 217);
+    background-color: #014996d5;
+    transition: background-color 0.5s;
+}
+
+.total {
+    text-align: left;
+}
+
+
